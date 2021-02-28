@@ -1,0 +1,16 @@
+{% extends 'main.html' %} {% block content %}
+  <header><h1>RECOMMENDATION</h1></header>
+    <table class="table_movie">
+        <tr>
+    {% for movie in selected_movies %}
+          <td><a href="#">  {{ movie.title }}  </a></td>
+    {% endfor %}
+        </tr>
+        <tr>
+    {% for movie in selected_movies2 %}
+          <td><a href="#">   {{ movie.title }}  </a></td>
+    {% endfor %}
+        </tr>
+    </table>
+
+{% endblock %}

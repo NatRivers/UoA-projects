@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<main id="main">
+    <header id="movie-header">
+        All Actors
+    </header>
+
+<table id="movies_act_table">
+    <tbody>
+    {% for act in actors %}
+    <tr>
+        <td>
+            <a href="{{ actors[act] }}"> {{act}} </a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}}

@@ -1,0 +1,43 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<!--<h1>{{movie.title}}</h1>
+<form action="{{handler_url}}" method="post">
+  Name: <input type="text" name="usrname">
+  <input type="submit">
+</form>
+<br>
+<textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>-->
+
+
+<main id="mainauth">
+    <header>
+        <h1>{{movie}}</h1>
+    </header>
+
+    <div style="clear:both">
+        <div class="form-wrapper">
+            <form action="{{handler_url}}" method="post">
+                {{form.movie_title}}  <!--Need to include this hidden field as it tracks the article being commented.-->
+                {{form.csrf_token}} <!--Need to include this token - Flask WTForms requires it.-->
+                <br>
+                <div class ="form-field">{{form.comment.label}} </br>{{form.comment(size = 100, placeholder="type your comment", class="textarea", cols="80", rows="12", wrap="hard")}}
+                    {% if form.comment.errors %}
+                        <ul class="errors">
+        	            {% for error in form.comment.errors %}
+        		            <li>{{error}}</li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                <button onclick="myFunction()">Submit</button>
+            </form>
+        </div>
+    </article>
+</main>
+<script>
+function myFunction() {
+  alert("Your Review Has Been Submitted!");
+}
+</script>
+{% endblock %}

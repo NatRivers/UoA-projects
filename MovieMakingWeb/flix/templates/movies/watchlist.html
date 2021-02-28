@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<main id="main">
+    <header id="movie-header"  style="font-weight: bold">
+        {{ movies_title }}
+    </header>
+
+<table id="movies_gen_table">
+    <tbody>
+    {% for mov in movies %}
+    <tr>
+        <td>
+            <a href="#"> {{mov.title}} </a>
+            <button id="add_watchlst" onclick="location.href='{{mov.remove_watchlst_url}}'; myFunction()">REMOVE</button>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<script>
+function myFunction() {
+  alert("Movie has been removed from your watch list!");
+}
+</script>
+{% endblock %}

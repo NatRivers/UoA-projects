@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title>235Flix {{ title }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+</head>
+<body>
+<div id="back_home"><a href="{{ url_for('home_bp.home') }}"><button type="button" style="height: 30px ;width: 100px;">BACK</button></a></div>
+<main id="mainauth">
+    <div class="formwrapper">
+        <h1 class="title">{{ title }}</h1>
+        <form method="POST" action="{{ handler_url }}">
+             {{ form.csrf_token }} <!-- Need to include this token - Flask WTForms requires it.-->
+            <div class="form-field">{{ form.username.label }} {{ form.username }}
+                {% if form.username.errors or username_error_message is not none %}
+                    <ul class="errors">
+                        {% if username_error_message is not none %}
+                            <li>
+                                {{ username_error_message }}
+                            </li>
+                        {% endif %}
+                        {% for error in form.username.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+            <div class="form-field">{{ form.password.label }} {{ form.password }}
+                {% if form.password.errors or password_error_message is not none %}
+                    <ul class="errors">
+                        {% if password_error_message is not none %}
+                            <li>
+                                {{ password_error_message }}
+                            </li>
+                        {% endif %}
+                        {% for error in form.password.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+            {{ form.submit }}
+        </form>
+    </div>
+</main>
+</body>
+</html>
