@@ -1,0 +1,46 @@
+What I used in AssCool.py are the following: 
+
+§ Changing the players’ colors
+  I decided to change the disks’ colors in order to differentiate which player’s disk is where in the board since having a monotone same color for 
+  everything (including the texts, board color, etc.) is more difficult to locate where are the players’ disks, which because of this might lead 
+  to confusion from where do the players get a new extra score. I changed this format in the display(self) function in class GameBoard in section 1. 
+  I changed player 1 to “green” and player 2 to “orange”. I imported a module “sys” then typed in “shell = sys.stdout.shell” in order for me to 
+  access it. I got the colors’ code: “keyword = orange, string = green, comments = red and definition = blue” then using shell.write(string, color code) 
+  to output the desired font color (note: I didn’t use blue since my default output is blue in IDLE). Not only that I change the disk colors I also 
+  changed the string colors of the winners in “Player__ (shape) wins!” in function play(self) from class FourInARow to their respective disk colors. 
+  When it’s a “draw” the color I chose is red to make it somehow more “appealing”. The complexity for this is constant O(1) since I didn’t use 
+  any while or for loops, I specifically changed the colors without any loops involved.
+  
+§ Ask player to choose the size of the board
+  Of course before starting the game, player will be asked to choose the board size that the player wants to play in. It’s inserted outside the classes, 
+  at the very bottom of the program. I initialized the board_size to 0 and use a while loop to ask the player for the board size over and over again if 
+  the player chooses a number less than 4 or greater than 99 which will give an output “Invalid board size!” if the board is out of that range. If the 
+  player input a non-digit input, it will output a message “Please enter a number!”. This loop continues until the player inputs the correct board size 
+  4 to 99 inclusive. Complexity for this O(1) or worst case is probably O(n), since if the player continues to input the wrong value, then the loops 
+  continues to iterate over and over again depending on how many times the player inputs the value for the nth time.
+
+§ Ask player if the player needs help and using import Time
+  I inserted a new function in class FourInARow countdown(self) which are called in play(self) every time the player fails to input the correct column 
+  or insert in a column that’s full. The reason why I think it should be called when player enters the wrong column is because in real-life games, when 
+  players struggle they sometimes tend to either “bruteforce” the already-full column or sometimes they enter any number as they “don’t really care anymore”, 
+  so I call the help function if this happens which player can choose “y” of need help and other letters for no. If player chooses “y”, then it outputs the 
+  best column to insert the disk which I call the function column_resulting_in_max_points(player) to get the column. Because the function returns a tuple, 
+  I change the output to a list then take index 0, then output the value of that index 0 which is the column. On the other hand, if the player chooses “n” 
+  or other letters, I assume it’s a no then I printed a “good luck!” which the game continues as per normal. Also, to make it more ‘interesting’ I imported 
+  the module “time” and use time.sleep for some delays in the countdown(self) function. So before the “need help?” is executed, I insert a time.sleep(1) in 
+  order for the player to process the “entered an invalid value” sentence first, then ask whether they need help. If the player entered “y”, I printed “. . . . .”
+  one dot at a time as if the game is “thinking” for a solution to help the player, after that the best column value is printed. This also applies to when 
+  player answers a no where there’s a time.sleep(2) as in “loading”. Then the game goes on.The complexity for this is O(1) as this ‘need help’ function is 
+  generated almost every time the user fails to input the correct column during the game, and if the player answers yes then a while O(1) loop is executed, 
+  otherwise if it’s a no, then it’s only O(1). Also I included time.sleep() which may slightly increase the time.
+
+§ Play again
+  After the round is finished, a “play again” is asked whether the player wants to play again with a function called play_again(self) in the class FourInARow. 
+  I also inserted a little time.sleep() before the question want to play again or not is executed. Then if the player answers yes, then the process starts 
+  again like the beginning where the player will be asked to enter the board size. Whereas if the player answers no, a message “Thank you for playing” is 
+  executed. Complexity for this function is pretty much the same as the previous about the “choosing board size”, however I added an input “Play again?”, if 
+  yes then the size of the board will be asked again which is the same as the previous complexity O(1) or O(n) if the player constantly input the incorrect 
+  number for the nth time. If the player answers no, then it’s O(1).
+  
+Overall, my AssCool.py extension functions are mostly constant O(1) complexity since I didn’t include so much loops, but in the worst case, then it should 
+be around O(n).
