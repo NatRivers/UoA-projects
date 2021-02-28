@@ -1,0 +1,240 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+body{
+    font-size: 14px;
+    color: aqua;
+    background-color: black;
+}
+.container{
+    background-color: black;
+    width: auto;
+    height: auto;
+    min-height: 300px;
+    display: inline-block;
+    position: relative;
+}
+.bg{
+    background-image: url(../background.jpg);
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 850px;
+    min-width: 1450px;
+}
+.nav{
+    padding: 40px 40px;
+}
+#logo{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    float: left;
+}
+img{
+    width: 100%;
+}
+.menu{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    float: right;
+}
+.menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 30px;
+}
+.menu ul li a{
+    color: aqua;
+    text-decoration: none;
+    font-family: Serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+.dropbtn{
+    background-color: #ffffff00;
+    border: none;
+    color: aqua;
+    font-family: Serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+}
+.dropdown-content-auth {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content-auth a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content-auth a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content-auth {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.home_movies{
+    font-size: 15px;
+    font-family: Verdana;
+    padding: 70px;
+}
+#username{
+    text-align: right;
+    padding-right: 20px;
+}
+table{
+    width: 100%;
+}
+table.table_movie{
+    width: 1000px;
+    table-layout: fixed;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+table.table_movie td{
+    height: 250px;
+    font-weight: bold;
+    border: 10px solid #383838;
+    border-collapse: collapse;
+    vertical-align: bottom;
+    background-color: #383838;
+    opacity: 0.9;
+}
+table.table_movie td a{
+    background-color: black;
+    color: aqua;
+    text-decoration: none;
+}
+#mainauth{
+    text-align: center;
+    margin: 20px;
+    color: aqua;
+    line-height: 25px;
+    padding: 200px 180px;
+    width: 66.666667%;
+}
+#back_home{
+    padding: 40px 40px;
+}
+#back_home a{
+    color: aqua;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Serif;
+}
+#movie-header{
+    text-align: left;
+    font-size: 30px;
+    font-family: Serif;
+}
+table#movies_act_table{
+    width: 700px;
+    table-layout: fixed;
+    text-align: center;
+    padding-top: 30px;
+    float: right;
+}
+table#movies_act_table tbody{
+    display: block;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+table#movies_act_table tr td{
+    height: 10px;
+    border: 10px solid #383838;
+    border-collapse: collapse;
+    vertical-align: bottom;
+    background-color: #383838;
+    opacity: 0.9;
+}
+table#movies_act_table tr td a{
+    color: aqua;
+    text-decoration: none;
+    font-size: 15px;
+}
+table#movies_gen_table{
+    width: 700px;
+    table-layout: fixed;
+    text-align: center;
+    padding-top: 30px;
+    float: right;
+}
+table#movies_gen_table tbody{
+    display: block;
+    max-height: 600px;
+}
+table#movies_gen_table tr td{
+    height: 10px;
+    border: 10px solid #383838;
+    border-collapse: collapse;
+    vertical-align: bottom;
+    background-color: #383838;
+    opacity: 0.9;
+}
+table#movies_gen_table tr td a{
+    color: aqua;
+    text-decoration: none;
+    font-size: 15px;
+}
+#add_watchlst{
+    float: right;
+}
+table#table_comment{
+    width: 100%;
+    max-width: 500px;
+    background-color: #383838;
+    opacity: 0.9;
+    background-color: #383838;
+    opacity: 0.9;
+}
+
+table#table_comment tbody{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+table#table_comment tr td{
+    width: 100%;
+    max-width: 500px;
+    height: 10px;
+    border: 10px solid #383838;
+    border-collapse: collapse;
+    vertical-align: bottom;
+    background-color: #383838;
+    opacity: 0.9;
+}
