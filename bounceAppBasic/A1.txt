@@ -1,0 +1,14 @@
+NAME : THERESA NATHANIA LAN
+UPI : TLAN121
+ID : 569504563
+
+JDK version : 
+I used eclipse to do this assignment with JDK 14.0.2 version that was written in canvas page on how to download eclipse and its JDK version.
+
+How much time did the assignment take you overall?
+It took 5 days for me to complete the coderunner, then another 1 day to do the overridden stuffs and also drawing the shapes and complete everything.
+
+Which areas of the assignment did you find easy and which ones were difficult?
+I don’t think the assignment is actually too hard, it’s just sometimes i overthink too much that i ended up thinking something that’s actually way too far ahead, but after reading piazza posts i just realized it’s actually not that complicated. I say the most complicated one will be MovingOverlappedSquare, it asks us to override move() which is kind of confusing how to get both the rectangle border and the squares to sync when they move around.
+
+Because this is my first time using eclipse, i kind of find it hard setting it up and at first i have a problem in running the whole assignment because eclipse asks for the package name at the very top of the file which somehow cause the whole file to crash really bad as if they are not related to each other even though they are in the same folder (e.g: A1 called AnimationPanel and the terminal says it can’t find AnimationPanel, calling MovingShape in AnimationPanel also does the same thing). I got it sorted by removing the package name and it works totally fine, even though eclipse still insists to provide the package name, so i can’t run it directly in eclipse since it will give an error package message, and i have to run it in the terminal.
