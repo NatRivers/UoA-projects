@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title>235Flix</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg">
+            <div class="nav">
+                <div class="menu">{% include 'topbar.html' %}</div>
+                <div class="home_movies">{% block content %} {% endblock %}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

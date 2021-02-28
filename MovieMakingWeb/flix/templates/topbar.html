@@ -1,0 +1,25 @@
+<ul>
+    <li><a href="{{ url_for('home_bp.home') }}">HOME</a></li>
+    <li><a href="{{ url_for('movies_bp.display_all_movies') }}">MOVIES</a></li>
+
+    <div class="dropdown">
+      <li><button class="dropbtn">GENRE</button></li>
+      <div class="dropdown-content">
+          {% for gen in genre_display %}
+            <a href="{{ genre_display[gen] }}">{{ gen }}</a>
+          {% endfor %}
+      </div>
+    </div>
+
+    <li><a href="{{ url_for('actors_bp.show_all_actors') }}">ACTOR</a></li>
+    {% if 'username' in session %}<li><a href="{{ url_for('movies_bp.my_watchlst') }}">WATCHLIST</a></li>{% endif %}
+
+    <div class="dropdown">
+      <li><a href="{{ url_for('authentication_bp.login') }}"><button class="dropbtn">LOG IN</button></a></li>
+      <div class="dropdown-content-auth">
+          <a href="{{ url_for('authentication_bp.register') }}">REGISTER</a>
+          <a href="{{ url_for('authentication_bp.logout') }}">LOG OUT</a>
+      </div>
+    </div>
+</ul>
+<div id="username">{% if 'username' in session %}Hello, {{ session['username'] }}!{% endif %}</div>
