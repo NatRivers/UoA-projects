@@ -1,0 +1,374 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  font-size:  24px;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    background: url('bg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+  background-color: white;
+  width: 100%;
+  min-width: 960px;
+  max-width: 1140px;
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+  padding-bottom: 5px;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: red;
+}
+
+.custom-background-color {
+    color: #3f888f;
+  }
+
+img{
+    width: 120px;
+    height: 76px;
+    display: inline;
+    float: left;
+    z-index: 100;
+    position: fixed;
+}
+
+.custom-color {
+    width: 100%;
+    right: 0;
+    background: #3F888F;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    display: inline-block;
+    
+}
+
+.nav{
+    padding: 20px 40px;
+    float: right;
+}
+
+.custom-color ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.custom-color ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: Serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.custom-color ul li a:hover{
+    color: yellow;
+}
+
+.dropbtn{
+    background-color: #3F888F;
+    border: none;
+    color: black;
+    font-family: Serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.dropbtn:hover{
+    color: yellow;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-auth {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content-auth button{
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content-auth a:hover {background-color: rgba(221, 221, 221, 0.702);}
+.dropdown-content-auth button:hover {background-color: rgb(48, 185, 107);}
+.dropdown:hover .dropdown-content-auth {display: block;}
+
+.dropdown-content-auth a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+/******* home welcome to BPD*******/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(50%, 100%, 0); }
+  100% { transform: translate3d(50%, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 53vmin;
+  left: 50%;
+  position: fixed;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(229, 211, 179, 0.5);
+  border-radius: 50%;
+  min-width: 700px;
+  max-width: 1140px;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 8.5vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+  font-size: 6vmin;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+  text-align: center;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0%,100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: black;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+  text-align: center;
+}
+
+/******** stickies ********/
+
+.stickies {
+    font-family: 'Lato';
+    position: absolute;
+    z-index: -1;
+    top: 67%;
+    width: 100%;
+    margin: auto;
+    background: transparent;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.stickies h2 {
+    font-weight: bold;
+    font-size: 35px;
+    background-color: #3f888f;
+    padding-left: 3px;
+}
+   
+.stickies p {
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+    font-family: 'Caveat';
+    padding-left: 7px;
+}
+   
+.stickies ul, .stickies li{
+    list-style:none;
+}
+
+.stickies ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.stickies ul li a{
+    text-decoration:none;
+    color:#000;
+    background: #E5D3B3;
+    display:block;
+    height:10em;
+    width:10em;
+    transition: transform .15s linear;
+    /* box-shadow: 12px 5px 7px rgba(33,33,33,.7); */
+}
+.stickies ul li a h2 button{
+    float: right;
+    height: 35px;
+    width: 35px;
+    background-color: #3f888f;
+    color: white;
+    border: none;
+}
+
+.stickies ul li:nth-child(odd) a{
+    transform:rotate(-7deg);
+    position:relative;
+    top:5px;
+    box-shadow: -12px 7px 7px rgba(33,33,33,.7);
+}
+
+.stickies ul li:nth-child(even) a{
+    transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    box-shadow: 12px 10px 7px rgba(33,33,33,.7);
+}
+.stickies ul li:nth-child(3n) a{
+    transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    box-shadow: 12px 7px 7px rgba(33,33,33,.7);
+}
+.stickies ul li:nth-child(5n) a{
+    transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+}
+
+.stickies ul li:hover, .stickies ul li:focus{
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+}
+
+.stickies ul li{
+    z-index: -1;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: transparent;
+    display: inline-block;
+  }
+
+/************ modal *************/
+
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 101; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.close {
+    position:absolute;
+    top: 50px;
+    right:130px;
+    border-radius: 50%;
+    color: red;
+    background-color: white;
+    text-align: center;
+    margin: 4px 2px;
+    padding: 10px;
+    border: none;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.25);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Add padding to containers */
+  .regformstyle{
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* width of reg form */
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #00b573;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Book Program Discussion</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="custom-background-color">
+        <img src="logo.png" width="67px" height="67px" alt="logo img">
+        <div class="custom-color">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">BOOKS</a></li>
+                    <li><a href="#">GET STARTED</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">MEMBERS</a></li>
+                    <div class="dropdown">
+                        <li><a href="#"><button class="dropbtn">LOGIN</button></a></li>
+                        <div class="dropdown-content-auth">
+                            <a href="#" id="trigger-modal">REGISTER</a>
+                            <a href="#">LOG OUT</a>
+                        </div>
+                    </div>
+                </ul>
+            </div> 
+        </div>
+    </div>
+
+    <div class="animated-title">
+        <div class="text-top">
+          <div>
+            <span>WELCOME TO</span>
+            <!-- <span>TO</span> -->
+          </div>
+        </div>
+        <div class="text-bottom">
+          <div>BOOK PROGRAM DISCUSSION!</div>
+        </div>
+    </div>
+
+    <div class="stickies">
+        <ul>
+            <li>
+                <a href="https://www.rnz.co.nz/news/national/443181/covid-19-update-six-new-cases-in-managed-isolation">
+                    <h2>Latest News <button onclick="https://www.rnz.co.nz/news/national/443181/covid-19-update-six-new-cases-in-managed-isolation">></button></h2> 
+                    <p>Covid-19 update: Six new cases in managed isolation</p>
+                    <img src="news.JPEG" style="left: 15%; top: 30%; width: 70%; height: auto; z-index: -1;" alt="news icon">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>Books <button>></button> </h2> 
+                    <br>
+                    <img src="book.JPEG" style="left: 15%; top: 25%; width: 70%; height: auto;" alt="book icon">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>Get Involved <button>></button></h2> 
+                    <p>Meet new people...</p>
+                    <br>
+                    <p>Experience new and interesting reading adventures...</p>
+                    <br>
+                    <p>Whatever the reason you want to be part of a book group, we can help.</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="bookclubrego" class="modal">
+        <form>
+            <span class="close">&times;</span>
+            <div class="regformstyle">
+                <h1>Register</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+
+                <div id="userDetails">
+                    <label for="given_name"><b>Given Name</b></label>
+                    <input type="text" placeholder="Enter given name" name="given_name" id="given_name" required>
+                    
+                    <label for="surname"><b>Surname</b></label>
+                    <input type="text" placeholder="Enter surname" name="surname" id="surname" required>
+                    
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter username" name="username" id="username" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                </div>
+                <hr>
+
+                <div id="addresses">
+                    <label for="h_addr"><b>Home Address</b></label>
+                    <input type="text" placeholder="Enter home address" name="h_addr" id="h_addr" required>
+
+                    <label for="w_addr"><b>Work Address</b></label>
+                    <input type="text" placeholder="Enter work address" name="w_addr" id="w_addr" required>
+                </div>
+                <hr>
+
+                <div id="contacts">
+                    <label for="mobile"><b>Mobile Number</b></label>
+                    <input type="text" placeholder="Enter mobile number" name="mobile" id="mobile" required>
+                    
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                </div>
+                <hr>
+
+                <button type="submit" class="registerbtn" id="reg">Register</button>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
