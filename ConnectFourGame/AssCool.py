@@ -29,16 +29,31 @@ class GameBoard:
             sum_entries += e
         return sum_entries == row_col_total #if the entries is equal to board size, it means there's no available slots and the game is finished
     
-    def display(self):
+    def display(self, col):
+        chosen_col = col
+        comp_col = ""
+        if col.lower() == "red":
+            chosen_col = "COMMENT"
+            comp_col = "STRING"
+        elif col.lower() == "orange":
+            chosen_col = "KEYWORD"
+            comp_col = "DEFINITION"
+        elif col.lower() == "green":
+            chosen_col = "STRING"
+            comp_col = "COMMENT"
+        else:
+            chosen_col = "DEFINITION"
+            comp_col = "KEYWORD"
+
         for e in range(len(self.items) - 1, -1, -1): #board is flipped -> self.items[0] is at the very bottom, not at the top
             for i in self.items[e]: #iterate into each elements in self.items, if 0 = empty, 1 = player 1 (o) and 2 = player 2 (x)
                 if i == 0:
                     print(" ", end = " ")
                 elif i == 1:
-                    shell.write("o ","STRING")
+                    shell.write("o ", chosen_col)
                     #print("o", end = " ")
                 else:
-                    shell.write("x ","KEYWORD")
+                    shell.write("x ",comp_col)
                     #print("x", end = " ")
             print()
                      
@@ -309,7 +324,10 @@ class FourInARow:
         self.size = size
     def play(self):
         print("*****************NEW GAME*****************")
-        self.board.display()
+        choose_user_color = input("User choose your color(RED, ORANGE, GREEN, BLUE): ")
+        while choose_user_color.lower() != "red" and choose_user_color.lower() != "orange" and choose_user_color.lower() != "green" and choose_user_color.lower() != "blue":
+            choose_user_color = input("Please choose either RED, ORANGE, GREEN or BLUE: ")
+        self.board.display(choose_user_color)
         player_number=0
         print()
         while not self.board.game_over():
@@ -353,7 +371,7 @@ class FourInARow:
                         column = self.board.free_slots_as_close_to_middle_as_possible()[0]
                 self.board.add(column, player_number+1)
                 print("The AI chooses column ", column)
-            self.board.display()   
+            self.board.display(choose_user_color)   
             player_number=(player_number+1)%2
         if (self.board.points[0]>self.board.points[1]):
             shell.write("Player 1 (circles) wins!", "STRING")
