@@ -4,7 +4,8 @@ What I used in AssCool.py are the following:
   I decided to change the disks’ colors in order to differentiate which player’s disk is where in the board since having a monotone same color for 
   everything (including the texts, board color, etc.) is more difficult to locate where are the players’ disks, which because of this might lead 
   to confusion from where do the players get a new extra score. I changed this format in the display(self) function in class GameBoard in section 1. 
-  I changed player 1 to “green” and player 2 to “orange”. I imported a module “sys” then typed in “shell = sys.stdout.shell” in order for me to 
+  I allow players to change their colors to RED, ORANGE, GREEN or BLUE with the computer's color assigned different from the chosen color which is
+  the contrast color of the player's chosen one. I imported a module “sys” then typed in “shell = sys.stdout.shell” in order for me to 
   access it. I got the colors’ code: “keyword = orange, string = green, comments = red and definition = blue” then using shell.write(string, color code) 
   to output the desired font color (note: I didn’t use blue since my default output is blue in IDLE). Not only that I change the disk colors I also 
   changed the string colors of the winners in “Player__ (shape) wins!” in function play(self) from class FourInARow to their respective disk colors. 
