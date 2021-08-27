@@ -4,7 +4,7 @@ UPI : tlan121
 ID : 569504563
 DESCRIPTION : CS130 ASSIGNMENT 1 - FOUR IN A ROW WITH AI
 """
-import sys
+mport sys
 import time
 shell = sys.stdout.shell
 
@@ -373,16 +373,32 @@ class FourInARow:
                 print("The AI chooses column ", column)
             self.board.display(choose_user_color)   
             player_number=(player_number+1)%2
+
+        chosen_col = ""
+        comp_col = ""
+        if choose_user_color.lower() == "red":
+            chosen_col = "COMMENT"
+            comp_col = "STRING"
+        elif choose_user_color.lower() == "orange":
+            chosen_col = "KEYWORD"
+            comp_col = "DEFINITION"
+        elif choose_user_color.lower() == "green":
+            chosen_col = "STRING"
+            comp_col = "COMMENT"
+        else:
+            chosen_col = "DEFINITION"
+            comp_col = "KEYWORD"
+            
         if (self.board.points[0]>self.board.points[1]):
-            shell.write("Player 1 (circles) wins!", "STRING")
+            shell.write("Player 1 (circles) wins!", chosen_col)
             print()
             self.play_again()
         elif (self.board.points[0]<self.board.points[1]):    
-            shell.write("Player 2 (crosses) wins!", "KEYWORD")
+            shell.write("Player 2 (crosses) wins!", comp_col)
             print()
             self.play_again()
         else:  
-            shell.write("It's a draw!", "COMMENT")
+            shell.write("It's a draw!", "")
             print()
             self.play_again()
                           
