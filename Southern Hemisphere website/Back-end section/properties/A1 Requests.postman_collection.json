@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "6ffa8138-9367-4182-9e74-cafa7757649b",
+		"name": "A1 Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetLogo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetLogo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetLogo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVersion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetVersion",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetVersion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllStaff",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetAllStaff",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetAllStaff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetStaffPhoto 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetStaffPhoto/1145344",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetStaffPhoto",
+						"1145344"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetStaffPhoto 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetStaffPhoto/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetStaffPhoto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCard 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetCard/1202142",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetCard",
+						"1202142"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCard 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetCard/12",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetCard",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetItems 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetItems",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetItems 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetItems/b",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetItems",
+						"b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetItemPhoto 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetItemPhoto/156571347",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetItemPhoto",
+						"156571347"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetItemPhoto 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetItemPhoto/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetItemPhoto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WriteComment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Comment\": \"Welcome to <a href='https://shit.ac.nz/'>SHIT</a> !!!\",\r\n    \"Name\": \"Lucifer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/WriteComment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"WriteComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetComments",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetComments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

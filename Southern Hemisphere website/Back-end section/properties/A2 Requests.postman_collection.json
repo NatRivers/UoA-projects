@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "09f66039-3f4f-4cff-bb15-66b2f7c6db50",
+		"name": "A2 Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\": \"Bond\",\r\n    \"Password\": \"MI6\",\r\n    \"Address\": \"123 Anyway\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/Register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVersion (unauthorized 1)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetVersionA",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetVersionA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVersion (unauthorized 2)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "mi66",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bond",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetVersionA",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetVersionA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVersion (authorized)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "MI6",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Bond",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/GetVersionA",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"GetVersionA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseItem (unauthorized 1)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/PurchaseItem",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"PurchaseItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseItem (unauthorized 2)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "MI66",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Bond",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/PurchaseItem",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"PurchaseItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseItem (authorized)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "MI6",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Bond",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProductID\": 156571347,\r\n    \"Quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/PurchaseItem",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"PurchaseItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseSingleItem (unauthorized 1)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/PurchaseSingleItem/156571347",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"PurchaseSingleItem",
+						"156571347"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseSingleItem (unauthorized 2)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "MI66",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Bond",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/PurchaseSingleItem/156571347",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"PurchaseSingleItem",
+						"156571347"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseSingleItem (authorized)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "MI6",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Bond",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/PurchaseSingleItem/156571347",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"PurchaseSingleItem",
+						"156571347"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
