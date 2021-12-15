@@ -1,5 +1,5 @@
 # About this project
-> This project is divided into 2: Back-end and Front-end. 
+> This project is divided into 2: Back-end and Front-end which are independent from each other. 
 
 ## Back-End 
 We are tasked to use C# and .Net to implement the back-end part. Additionally, we used SQLite Studio software to get the overview of our database entry and also to implement our database. To import and update (populate) the database into our C# project, dotnet installation is required in order to run the project, it can be installed using the following command in the terminal:
