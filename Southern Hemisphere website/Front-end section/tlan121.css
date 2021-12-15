@@ -1,0 +1,356 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:  24px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100%;
+  }
+
+  body {
+    background-color: black;
+    width: auto;
+    height: 100%;
+    min-width: 1000px;
+    max-width: 1140px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 50px;
+    color: black;
+    padding-bottom: 5px;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .custom-bg {
+    background-image: url('https://images.wallpaperscraft.com/image/single/circle_glow_technology_169792_3840x2160.jpg');
+    margin:auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: absolute;
+    height:88%;
+    width: 100%;
+    color: black;
+    }
+  
+  img{
+      display: inline;
+      float: left;
+      position: fixed;
+      background-color: transparent;
+  }
+
+  .logo{
+    width: 200px;
+    height: 200px;
+    z-index: 100;
+  }
+  
+  #nav-bar {
+      width: 100%;
+      right: 0;
+      color: black;
+      font-size: 30px;
+      position: fixed;
+      top:0px;
+      display: inline-block;
+      background-color: transparent;
+  }
+  
+  .nav{
+      padding: 20px 40px;
+      float: right;
+  }
+  
+  #nav-bar ul li{
+      list-style-type: none;
+      display: inline-block;
+      padding: 5px 15px;
+  }
+  
+  #nav-bar ul li a{
+      color: black;
+      text-decoration: none;
+      font-family: Serif;
+      font-weight: bold;
+      font-size: 14px;
+  }
+  
+  #nav-bar ul li a:hover{
+      color: yellow;
+  }
+  
+  .dropbtn{
+      background-color: transparent;
+      border: none;
+      color: black;
+      font-family: Serif;
+      font-weight: bold;
+      font-size: 14px;
+  }
+  
+  .dropbtn:hover{
+      color: yellow;
+  }
+  
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  
+  .dropdown-content-auth {
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      /* float: right; */
+      right:0;
+  }
+  
+  .dropdown-content-auth button{
+      position: absolute;
+      background-color: black;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  .dropdown-content-auth a:hover {background-color: rgba(221, 221, 221, 0.702);}
+  .dropdown-content-auth button:hover {background-color: rgb(221, 221, 221, 0.702);}
+  .dropdown:hover .dropdown-content-auth {display: block;}
+  
+  .dropdown-content-auth a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+  }
+
+  .about{
+      float: right;
+      padding-top: 30%;
+      width: 40%;
+      padding-right:5%;
+      text-align: justify;
+      text-justify: inter-word;
+      display: block;
+      /* position: absolute;
+      right: 0;; */
+  }
+
+  .inner-about{
+    background-color: rgb(75, 74, 74, 0.3);
+    border-radius: 10px;
+  }
+  .inner-about p{
+    color: black;
+  }
+
+  .footer{
+    margin: auto;
+    position: absolute; 
+    top: 90%;
+    width: 100%;
+  }
+
+  .footer-icon{
+    float: left;
+  }
+
+  .footer-icon ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 70px;
+}
+
+  .icon{
+    width: 50px;
+    height: 50px;
+  }
+
+.icon:hover{
+    transform: scale(1.5);
+}
+
+  .footer-right{
+      position: absolute;
+      display: inline-block;
+      color: white;
+      right: 0;
+      margin-right: 5%;
+  }
+
+  .footer-right ul{
+    color: white;
+    float: right;
+  }
+
+  .footer-right ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.footer-right ul li a{
+    color:#c2bcbc;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+.footer-right ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.copyright{
+    padding-top: 40px;
+}
+.copyright p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    padding-left: 10px;
+    color: white;
+    font-style: bold, italic;
+    display: inline;
+}
+
+/* BODY PAGE */
+.body-modal{
+  display: none; 
+  position: absolute; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 10%;
+  width: 100%; 
+  height: 80%; 
+  overflow: auto; 
+  overflow-y: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.7);
+}
+
+#purchased {/* SUCCESSFUL PURCHASE MODAL */
+  top:12%;
+  left:25%;
+  display: none;
+  position: absolute;
+  z-index: 100; 
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding: 30px 0;
+  /* background-color: rgb(0,0,0);  */
+  background-color: rgba(255,243,0);
+  border-radius: 15px;
+}
+
+/* LOGIN & REGISTER */
+.login-modal{
+  display: none; 
+  position: fixed; 
+  z-index: 101; 
+  padding-top: 50px; 
+  right: 3%;
+  top: 30px;
+  width: 30%; 
+  height: 45%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0,0); 
+  border-radius: 5%;
+}
+
+.signup-modal{
+  display: none; 
+  position: absolute; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 8%;
+  width: 100%; 
+  height: 80%; 
+  overflow: auto; 
+  overflow-y: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close-reg {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-reg:hover,
+.close-reg:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  font-size: 13px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.registerbtn {
+  background-color: #00b573;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Southern Hemisphere Institute of Technology</title>
+        <link rel="stylesheet" href="tlan121.css">
+        <link rel="icon" href="http://localhost:5000/logo-192x192.png">
+        <script src="tlan121.js"></script>
+    </head>
+
+    <body>
+        <div id="homepage">
+            <div class="custom-bg">
+                <div id="nav-bar">
+                    <img class="logo" src="http://localhost:5000/api/GetLogo" alt="logo img">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#" id="home">HOME</a></li>
+                            <li><a href="#" id="staff">STAFF</a></li>
+                            <li><a href="#" id="instituteshop">INSTITUTE SHOP</a></li>
+                            <li><a href="#" id="guestbook">GUEST BOOK</a></li>
+                            <div class="dropdown">
+                                <li><a href="#" id="login"><button class="dropbtn" id="login_btn">LOGIN ▼</button></a></li>
+                                <div class="dropdown-content-auth">
+                                    <a href="#" id="signup_logout" style="z-index: 500;">REGISTER</a>
+                                    <!-- <a href="#">LOG OUT</a> -->
+                                </div>
+                            </div>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="about">
+                    <div class="inner-about">
+                        <p style="font-size: 40px; font-weight:bold; text-align: left;">Southern Hemisphere Institute of Technology</p>
+                        <br>
+                        <p style="font-size: 20px;">
+                        Southern Hemisphere Institute of Technology is a premiere establishment providing world-class higher education right here in New Zealand. 
+                        We take pride in what they do to the community at large.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-icon">
+                    <ul>
+                        <li><a href="#"><img class="icon" src="https://icon-library.com/images/fb-icon-white/fb-icon-white-0.jpg" alt="facebook"></a></li>
+                        <li><a href="#"><img class="icon" src="https://www.pngarea.com/pngm/147/1445047_square-logo-png-twitter-square-logo-comments-hd.png" alt="twitter"></a></li>
+                        <li><a href="#"><img class="icon" src="https://www.seekpng.com/png/full/353-3530402_open-youtube-logo-vector-circle.png" alt="youtube"></a></li>
+                        <li><a href="#"><img class="icon" src="https://findicons.com/files/icons/2779/simple_icons/128/instagram.png" alt="instagram"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li>|</li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li>|</li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li>|</li>
+                        <li><a href="#">About Us</a></li>
+                        <li>|</li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="copyright">
+                        <p>© All rights reserved</p><p id="version" style="padding-left: 3px;"></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- STAFF -->
+        <div id="staff-page" class="body-modal">
+            <div class="modal-content">
+                <div>
+                    <p style="color: black; text-align: center; font-size: 40px;">OUR STAFFS</p>
+                    <hr style="color:black; border:3px double; margin: 20px">
+                    <ul id="staff-content"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- INSTITUTE SHOP -->
+        <div id="purchased"></div>
+        <div id="instituteshop-page" class="body-modal">
+            <div class="modal-content">
+                <div>
+                    <p style="color: black; text-align: center; font-size: 40px;">PRODUCTS</p>
+                    <hr style="color:black; border:3px double; margin: 20px">
+                    <input type="text" placeholder="Search.." id="getItem" style="margin-left:10%; width:78%">
+                    <ul id="content"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- GUEST BOOK -->
+        <div id="comment-page" class="body-modal">
+            <div class="modal-content">
+                <p style="color: black; text-align: center; font-size: 40px;">CLIENTS COMMENTS</p>
+                <hr style="color:black; border:3px double; margin: 20px">
+                <textarea type="text" placeholder="Write Comment.." id="comment-box" style="display: inline; width:40%; height:200px;background-color: #f8f8f8;border-radius: 4px;padding: 12px 20px;resize: none;font-size: 15px;"></textarea>
+                <div style="overflow:auto; display: inline;float: right;"><iframe src='http://localhost:5000/api/GetComments' title="List of Comments" id="iframe"style="width:420px; height: 280px;border:2px solid black; border-radius: 3%;"></iframe></div>
+                <br>
+                <input type="text" placeholder="Full name" id="name-box" style="width:40%;"><div style="padding-left: 10px; display: inline;"><button id="submit-comment" style="height:40px; width:40px;background-color: #96c3eb;border:2px solid black">➥</button></div>
+                <p id="no-comment" style="color: red; font-size: 12px; text-align: center;"></p>
+            </div>
+        </div>
+
+        <!-- LOGIN -->
+        <div id="login-page" class="login-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <label for="Username"><b style="font-size: 15px;">Username:</b></label>
+                <input type="text" placeholder="Enter username" id="Username" required>
+                <label for="Password"><b style="font-size: 15px;">Password:</b></label>
+                <input type="password" placeholder="Enter password" id="Password" required>
+                <p id="wrong_auth" style="color: red; font-size: 12px; text-align: center;"></p>
+                <hr>
+                <button type="submit" class="registerbtn" id="reg">Sign In</button>
+            </div>
+        </div>
+
+        <!-- REGISTER-->
+        <div id="signup-page" class="signup-modal">
+            <div class="modal-content" style="width:50%">
+                <span class="close-reg">&times;</span>
+                <label for="signup-Username"><b style="font-size: 15px;">Username:</b></label>
+                <input type="text" placeholder="Enter username" id="signup-Username">
+                <label for="signup-Password"><b style="font-size: 15px;">Password:</b></label>
+                <input type="password" placeholder="Enter password" id="signup-Password">
+                <label for="signup-Address"><b style="font-size: 15px;">Address:</b></label>
+                <input type="text" placeholder="Enter address" id="signup-Address">
+                <p id="username_taken" style="color: red; font-size: 12px; text-align: center;"></p>
+                <hr>
+                <button type="submit" class="registerbtn" id="signup-reg">Register</button>
+            </div>
+        </div>
+    </body>
+</html>
