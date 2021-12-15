@@ -8,5 +8,5 @@ dotnet A3.dll
 ### To run the xml file:
 Open the terminal in the server directory __XmlValCore_ and enter the following command:
 ```
-dotnet  XmlValCore.dll -schema '_{.xsd schema file}_' '_{.xml file to test}_'
+dotnet  XmlValCore.dll -schema '{.xsd schema file filepath}' '{.xml file to test filepath}'
 ```
