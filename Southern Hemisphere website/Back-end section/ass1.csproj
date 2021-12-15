@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk.web">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>_ass1</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.Extensions.Hosting" />
+    <None Remove="Microsoft.AspNetCore.Hosting" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.Extensions.Configuration.Abstractions" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="Data\" />
+    <None Remove="model\" />
+    <None Remove="properties\" />
+    <None Remove="dto\" />
+    <None Remove="controllers\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="System.Drawing.Common" />
+    <None Remove="System.IO" />
+    <None Remove="Microsoft.AspNetCore.Http" />
+    <None Remove="Microsoft.AspNetCore.HttpOverrides" />
+    <None Remove="Helper\" />
+    <None Remove="Handler\" />
+    <None Remove="System.Net.Primitives" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="model\" />
+    <Folder Include="properties\" />
+    <Folder Include="dto\" />
+    <Folder Include="controllers\" />
+    <Folder Include="Helper\" />
+    <Folder Include="Handler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+    <PackageReference Include="System.IO" Version="4.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.HttpOverrides" Version="2.2.0" />
+    <PackageReference Include="System.Net.Primitives" Version="4.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="properties\launchSettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="properties\launchSettings.json" />
+  </ItemGroup>
+</Project>
