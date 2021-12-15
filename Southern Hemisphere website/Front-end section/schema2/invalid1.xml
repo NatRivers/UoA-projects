@@ -1,0 +1,22 @@
+<ArrayOfProduct>
+  <Product id="412572458">
+    <Name>Women's Black Top</Name>
+    <Description>Black top. Fade-resistant polyester, containing 50% recycled material.</Description>
+    <Price>14.99</Price>
+   <Origins>
+       <Origin>Fiji</Origin>
+       <Origin>Vietnam</Origin>
+    </Origins>
+   </Product>
+  <Product id="412584658">
+    <Name>Men's Printed Tee</Name>
+    <Description>Printed Tee with front pocket. Polycotton and machine washable.</Description>
+    <Price>14.99</Price>
+   <Origins>
+       <Origin>Isengard</Origin> 
+    </Origins>
+   </Product>
+</ArrayOfProduct>
+
+<!-- origin is only: 
+Australia, Fiji, France, India, New Zealand, South Korea, and Vietnam -->

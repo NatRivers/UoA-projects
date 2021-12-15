@@ -1,0 +1,14 @@
+<ArrayOfProduct>
+  <Product>
+    <Id>413632458</Id>
+    <Name>Men's White Tee</Name>
+    <Description>Plain white tee with logo. Stand out in the crowd. Machine washable pure cotton.</Description>
+    <Price>$14.99</Price>
+  </Product>
+  <Product>
+    <Id>522163231</Id>
+    <Name>Children's toy</Name>
+    <Description>Our mascot Pooh riding high. Child-safe plastic. Not suitable for children under the age of 3.</Description>
+    <Price>$14.99</Price>
+  </Product>
+</ArrayOfProduct>

@@ -1,0 +1,26 @@
+<ArrayOfProduct>
+  <Product>
+    <Id>156571347</Id>
+    <Name>Water Bottle</Name>
+    <Description>Brushed stainless steel water bottle. Soft matt finish. Dishwasher-proof.</Description>
+    <Price>10.99</Price>
+  </Product>
+  <Product>
+    <Id>324284878</Id>
+    <Name>Women's Tee</Name>
+    <Description>Bright orange Tee for women. Made from woven cotton. Machine washable.</Description>
+    <Price>14.99</Price>
+  </Product>
+  <Product>
+    <Id>325183578</Id>
+    <Name>Umbrella</Name>
+    <Description>Orange umbrella. Modern styling. Unisex design. UV-resistant fabric, allowing use as parasol.</Description>
+    <Price>2.99</Price>
+  </Product>
+  <Product>
+    <Id>412584658</Id>
+    <Name>Men's Printed Tee</Name>
+    <Description>Printed Tee with front pocket. Polycotton and machine washable.</Description>
+    <Price>14.99</Price>
+  </Product>
+</ArrayOfProduct>

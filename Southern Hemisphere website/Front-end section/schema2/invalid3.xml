@@ -1,0 +1,18 @@
+<ArrayOfProduct>
+  <Product id="324284878">
+    <Name>Women's Tee</Name>
+    <Description>Bright orange Tee for women. Made from woven cotton. Machine washable.</Description>
+    <Price>14.99</Price>
+    <Origins>
+       <Origin>Vietnam</Origin>
+    </Origins>
+  </Product>
+  <Product id="325183578">
+    <Name>Umbrella</Name>
+    <Description>Orange umbrella. Modern styling. Unisex design. UV-resistant fabric, allowing use as parasol.</Description>
+    <Price>2.99</Price>
+    <Origins>
+       <Origin></Origin>
+    </Origins>
+  </Product>
+</ArrayOfProduct>

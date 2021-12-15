@@ -1,0 +1,10 @@
+<ArrayOfProduct>
+  <Product id="325183578">
+    <Name>Umbrella</Name>
+    <Description>Orange umbrella. Modern styling. Unisex design. UV-resistant fabric, allowing use as parasol.</Description>
+    <Price>2.99</Price>
+    <Origins>
+       <Origin>Vietnam</Origin>
+    </Origins>
+  </Product>
+</ArrayOfProduct>

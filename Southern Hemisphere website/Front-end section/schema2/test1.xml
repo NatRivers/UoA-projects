@@ -1,0 +1,20 @@
+<ArrayOfProduct>
+  <Product id="413632458">
+    <Name>Men's White Tee</Name>
+    <Description>Plain white tee with logo. Stand out in the crowd. Machine washable pure cotton.</Description>
+    <Price>14.99</Price>
+    <Origins>
+       <Origin>Australia</Origin>
+       <Origin>India</Origin>
+    </Origins>
+  </Product>
+  <Product id="522163231">
+    <Name>Children's toy</Name>
+    <Description>Our mascot Pooh riding high. Child-safe plastic. Not suitable for children under the age of 3.</Description>
+    <Price>14.99</Price>
+    <Origins>
+       <Origin>South Korea</Origin>
+       <Origin>Fiji</Origin>
+    </Origins>
+  </Product>
+</ArrayOfProduct>

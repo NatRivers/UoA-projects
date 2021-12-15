@@ -1,0 +1,20 @@
+<ArrayOfProduct>
+  <Product>
+    <Id>156572458</Id>
+    <Name>Coffee Mug</Name>
+    <Price>8.99</Price>
+    <Description>White coffee mug. Stain-resistant brown interior. Dishwasher-proof. Make a lasting statement at the coffee club!</Description>
+  </Product>
+  <Product>
+    <Id>165773457</Id>
+    <Name>Women's hat</Name>
+    <Price>12.99</Price>
+    <Description>Women's printed cotton hat. Not suitable for machine wash.</Description>
+  </Product>
+  <Product>
+    <Id>565783357</Id>
+    <Name>Men's Cap</Name>
+    <Price>12.99</Price>
+    <Description>Woven high-strength cotton cap. Beige. UV-resistant. Not suitable for machine wash.</Description>
+  </Product>
+</ArrayOfProduct>
