@@ -19,7 +19,7 @@ The biggest project I did in year 2 is the movie making website, where we did an
 **YEAR 3 PROJECTS**
 * Concert Booking Web *<Java, Javascript, HTML, CSS>* **(CS331 - Large-Scale Software Development)**  
 This project is a group project where we team up in a group of 3 and we each contributed our work to the final project. We only have to implement the domainmodel and mapper classes in concert-service and also the files in concert-common directory. I implemented some of the ConcertResource, dto, domainmodel and mapper files. Our task distribution was further stated in the directory's organisation.md file.
-* Book Program Discussion *<JavaScript, HTML, CSS>* (CS345 - Human-computer Interaction)  
+* Book Program Discussion *<JavaScript, HTML, CSS>* **(CS345 - Human-computer Interaction)**  
 A simple high level prototype was the task given to us where we should design our own template only for the homepage section and also the sign up section. I used a similar template to the [Movie Making Web](https://github.com/NatRivers/UoA-projects/tree/main/MovieMakingWeb). This project aims to follow as much of the principles of having a good user experience (UX) design such as common fate, proximity, similarity, etc. We are assigned with a color and should be able to create a good design out of our respected color.
   
   
