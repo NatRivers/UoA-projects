@@ -11,11 +11,11 @@ $ python3 -m pip install --user virtualenv
 $ python3 -m venv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
-`
+`  
 Open Pycharm and set the virtual environment. Go 'File' -> 'Settings' and select the project. Select 'Project Interpreter', then click on the gearwheel icon and choose 'Add'. Click 'Existing environment' to select the virtual environment
 
 ## Execution  
-Within the project's directory's terminal, type the following:
+Within the project's directory's terminal, type the following:  
 `
 $ python -m flask run
 `
