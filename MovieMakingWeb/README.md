@@ -7,10 +7,10 @@ This is a web application for CompSci 235 Movie Making Website practical assignm
 ## Installation
 You have to install venv environment into your computer. In your terminal, type the following:  
 `
-$ python3 -m pip install --user virtualenv
-$ python3 -m venv venv
-$ source venv/bin/activate
-$ pip install -r requirements.txt
+$ python3 -m pip install --user virtualenv  
+$ python3 -m venv venv  
+$ source venv/bin/activate  
+$ pip install -r requirements.txt  
 `  
 Open Pycharm and set the virtual environment. Go 'File' -> 'Settings' and select the project. Select 'Project Interpreter', then click on the gearwheel icon and choose 'Add'. Click 'Existing environment' to select the virtual environment
 
