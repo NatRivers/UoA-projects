@@ -5,7 +5,7 @@ Aim to read characters in car number plates using image processing from scratch 
 ```
 pip install -r requirements.txt
 ```
-Project has no virtual environment. Program should be able to work in any environment to test.
+Project has no virtual environment. Program should be able to work in any environment for testing.
 
 ### File CS373LicensePlateDetection.py  
 This is the main task for the assignment. Plate recognition are done raw without OpenCV. Sample license plate (numberplate1 to 6) used for the markers to check the program are given in the directory. 
