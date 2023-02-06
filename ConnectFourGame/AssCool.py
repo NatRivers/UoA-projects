@@ -4,7 +4,7 @@ UPI : tlan121
 ID : 569504563
 DESCRIPTION : CS130 ASSIGNMENT 1 - FOUR IN A ROW WITH AI
 """
-mport sys
+import sys
 import time
 shell = sys.stdout.shell
 
